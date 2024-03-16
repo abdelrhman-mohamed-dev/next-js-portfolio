@@ -11,13 +11,13 @@ export default function HeroSection() {
           {"Nice to meet you! 👋 "}
           <br />{" "}
           <span className="underline underline-offset-8 decoration-green-500">
-            {"I'm Abdelrhman."}
+            I&apos;m Abdelrhman.
           </span>
         </h1>
         <p className="md:w-96 text-lg text-gray-300">
-          {
-            "Based in Egypt, I'm a Fullstack developer passionate about building modern web applications that users love."
-          }
+          
+            Based in Egypt, I&apos;m a Fullstack developer passionate about building modern web applications that users love.
+          
         </p>
         <Link
           className="inline-block group"
