@@ -19,7 +19,7 @@ export default function Footer() {
     <div className="border-t mt-10">
       <div className="py-10 flex flex-col gap-5 justify-between items-center">
         <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2">
-          Abdelrhmman  🧑‍💻
+          {`Abdelrhmman  🧑‍💻`}
         </h1>
         <div className="flex items-center gap-5">
           {socials.map((social) => {
