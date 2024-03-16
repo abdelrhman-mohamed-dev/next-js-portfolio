@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000/"),
+  metadataBase: new URL("https://abdelrhman-mohamed.vercel.app/"),
 
   title: "Abdelrman Mohamed",
   authors: {
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   description:
     "Based in Egypt, I'm a Fullstack developer passionate about building modern web applications that users love.",
   openGraph: {
-    title: "Daily Vote",
+    title: "Abdelrman Mohamed",
     description:
       "Based in Egypt, I'm a Fullstack developer passionate about building modern web applications that users love.",
-    url: "http://localhost:3000/",
+    url: "https://abdelrhman-mohamed.vercel.app/",
     siteName: "Abdelrman Mohamed",
     images: "/og.png",
     type: "website",
