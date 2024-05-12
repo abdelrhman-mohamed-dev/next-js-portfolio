@@ -1,14 +1,17 @@
+import { Mails, MonitorUp, SendHorizontal } from "lucide-react";
+import React from "react";
+import Link from "next/link";
+
 import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Title from "@/components/ui/title";
-import Link from "next/link";
-import React from "react";
 
 export default function HeroSection() {
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
       <div className="space-y-10 text-center lg:text-left">
         <h1 className="text-4xl lg:text-7xl font-bold">
-          {`Nice to meet you! 👋 `}<br />{" "}
+          {`Nice to meet you! 👋 `}
+          <br />{" "}
           <span className="underline underline-offset-8 decoration-green-500">
             {`I'm Abdelrhman.`}
           </span>
@@ -20,8 +23,11 @@ export default function HeroSection() {
         <Link
           className="inline-block group"
           href={"mailto:mohamedsaad81973@gmail.com"}
+          target="_blank"
         >
-          <Title text="contact me 📬" />
+          <Title text="contact me">
+            <Mails className="w-6 h-6   " />
+          </Title>
         </Link>
       </div>
       <div className="relative">
@@ -37,10 +43,12 @@ export default function HeroSection() {
           <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
         <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10">
-
-        <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
-          <p>{`💼 Available for work`}</p>
-        </MovingBorderBtn>
+          <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
+            <p className="flex items-center gap-2">
+              {" "}
+              <MonitorUp /> {`Available for work`}
+            </p>
+          </MovingBorderBtn>
         </div>
       </div>
     </div>

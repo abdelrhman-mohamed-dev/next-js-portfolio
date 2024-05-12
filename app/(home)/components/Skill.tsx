@@ -1,8 +1,19 @@
 "use client";
-import { HoverEffect } from '@/components/ui/card-hover-effect'
-import Title from '@/components/ui/title'
-import React from 'react'
-import { SiExpress, SiGit, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si'
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+import Title from "@/components/ui/title";
+import { BadgeCheck } from "lucide-react";
+import React from "react";
+import {
+  SiExpress,
+  SiGit,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 export default function Skill() {
   const Skills = [
@@ -39,14 +50,19 @@ export default function Skill() {
       Icon: SiNodedotjs,
     },
     {
-      text:"JavaScript",
-      Icon : SiJavascript,
-    }
-  ]
+      text: "JavaScript",
+      Icon: SiJavascript,
+    },
+  ];
   return (
-    <div className='max-w-5xl mx-auto px-8'>
-      <Title text="Skills 🔪" className='flex flex-col justify-center items-center -rotate-6' />
+    <div className="max-w-5xl mx-auto px-8">
+      <Title
+        text="Skills"
+        className="flex flex-col justify-center items-center -rotate-6"
+      >
+        <BadgeCheck className="text-green-500" />
+      </Title>
       <HoverEffect items={Skills} />
     </div>
-  )
+  );
 }

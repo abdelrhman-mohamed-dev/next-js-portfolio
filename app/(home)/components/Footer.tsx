@@ -1,3 +1,4 @@
+import { CodeXml } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
@@ -18,8 +19,8 @@ export default function Footer() {
   return (
     <div className="border-t mt-10">
       <div className="py-10 flex flex-col gap-5 justify-between items-center">
-        <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2">
-          {`Abdelrhmman  🧑‍💻`}
+        <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 flex items-center gap-1">
+          {`Abdelrhmman`} <CodeXml className="h-10 w-10 text-green-500" />
         </h1>
         <div className="flex items-center gap-5">
           {socials.map((social) => {

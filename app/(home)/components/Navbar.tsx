@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
+
 import { SiGithub, SiLinkedin } from "react-icons/si";
+import { CodeXml } from "lucide-react";
 
 export default function Navbar() {
   const socials = [
@@ -17,8 +19,8 @@ export default function Navbar() {
   ];
   return (
     <nav className="py-10 flex justify-between items-center animate-move-down">
-      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2">
-        {`Abdelrhmman 🧑‍💻`}
+      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 flex gap-2 items-center">
+        {`Abdelrhmman`} <CodeXml className="h-10 w-10 text-green-500" />
       </h1>
       <div className="flex items-center gap-5">
         {socials.map((social) => {
