@@ -18,6 +18,7 @@ export function MovingBorderBtn({
   borderClassName,
   duration,
   className,
+  downloadUrl,
   ...otherProps
 }: {
   borderRadius?: string;
@@ -27,17 +28,30 @@ export function MovingBorderBtn({
   borderClassName?: string;
   duration?: number;
   className?: string;
+  downloadUrl?: string;
   [key: string]: any;
 }) {
+  const handleDownload = () => {
+    if (downloadUrl) {
+      const link = document.createElement("a");
+      link.href = downloadUrl;
+      link.download = "Abdelrhman_Mohamed.pdf"; // Specify the default filename
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl p-[1px] overflow-hidden",
         containerClassName
       )}
       style={{
         borderRadius: borderRadius,
       }}
+      onClick={handleDownload}
       {...otherProps}
     >
       <div
