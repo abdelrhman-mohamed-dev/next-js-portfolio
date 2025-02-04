@@ -44,7 +44,7 @@ export default function HeroSection() {
           <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
         <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10">
-          <MovingBorderBtn downloadUrl="/abdelrhman mohamed.pdf" borderRadius="0.5rem" className="p-3 font-semibold">
+          <MovingBorderBtn downloadUrl="/Abdelrhman Mohamed.pdf" borderRadius="0.5rem" className="p-3 font-semibold">
             <p className="flex items-center gap-2">
               {" "}
               <FcDocument /> {`Download CV`}
